@@ -5,18 +5,17 @@ from dotenv import load_dotenv
 
 from yandex_market.pages.authorization import authorization
 
-
 load_dotenv()
 login = os.getenv('LOGIN')
 password = os.getenv('PASSWORD')
 
 
-# @allure.dynamic.epic("starmain")
-# @allure.dynamic.feature("coolfeature2")
-# @allure.dynamic.story("yanmain2")
-# @allure.dynamic.severity("blocker")
-# @allure.dynamic.suite("Авторизация пользователя")
-#@allure.dynamic.id("7")
+@allure.epic("starmain")
+@allure.feature("coolfeature2")
+@allure.story("yanmain2")
+@allure.severity("blocker")
+@allure.suite("Авторизация пользователя")
+@allure.id("7")
 def test_successful_authorization():
     '''GIVEN'''
     authorization.open()
@@ -29,12 +28,12 @@ def test_successful_authorization():
     authorization.check_authorized_info()
 
 
-# @allure.dynamic.epic("starmain")
-# @allure.dynamic.feature("coolfeature2")
-# @allure.dynamic.story("yanmain2")
-# @allure.dynamic.severity("blocker")
-# @allure.dynamic.suite("Авторизация пользователя")
-# @allure.dynamic.id("8")
+@allure.epic("starmain")
+@allure.feature("coolfeature2")
+@allure.story("yanmain2")
+@allure.severity("blocker")
+@allure.suite("Авторизация пользователя")
+@allure.id("8")
 def test_unsuccessful_authorization():
     '''GIVEN'''
     authorization.open()

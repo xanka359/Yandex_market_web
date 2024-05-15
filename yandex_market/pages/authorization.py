@@ -3,16 +3,13 @@ import os
 from dotenv import load_dotenv
 from selene import browser, have, by
 from selene.support.shared.jquery_style import s
-from selenium.webdriver import ActionChains
 
 load_dotenv()
 
 
 class Authorization:
-
     login = os.getenv('LOGIN')
     password = os.getenv('PASSWORD')
-
 
     def open(self):
         browser.open('/')
@@ -35,7 +32,6 @@ class Authorization:
         s('.Npykn').element('[data-auto="public-user-info"]').should(have.text('Ксения А.'))
         browser.driver.execute_script('window.scrollBy(-50, 0);')
         return self
-
 
     def fill_login_form_invalid_credentials(self):
         s('#passp-field-login').type('someLogin')
