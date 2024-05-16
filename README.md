@@ -59,6 +59,7 @@ allure serve build/allure-results
 ____
 
 1. **Allure testops**  (запуск с селеноида)
+
    <img src="resources/images/alluretestops.jpg" width="1000" height="450"/>
 
 ___  
@@ -68,5 +69,6 @@ ___
 
 ___  
 
-3. **Telegram**  (запуск с селеноида) 
+3. **Telegram**  (запуск с селеноида)
+
    <img src="resources/images/tg.jpg" width="400" height="400"/>
