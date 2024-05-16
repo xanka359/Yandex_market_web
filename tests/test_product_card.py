@@ -17,7 +17,7 @@ password = os.getenv('PASSWORD')
 @allure.severity("hight")
 @allure.suite("Действия в карточке продукта")
 @allure.id("1")
-def test_adding_item_in_wishlist():  # passed
+def test_adding_item_in_wishlist():
     '''GIVEN'''
     authorization.successful_authorization(login, password)
 
@@ -35,7 +35,7 @@ def test_adding_item_in_wishlist():  # passed
 @allure.severity("hight")
 @allure.suite("Действия в карточке продукта")
 @allure.id("2")
-def test_adding_item_in_basket():  # passed
+def test_adding_item_in_basket():
     '''GIVEN'''
     authorization.successful_authorization(login, password)
 
@@ -53,7 +53,7 @@ def test_adding_item_in_basket():  # passed
 @allure.severity("hight")
 @allure.suite("Действия в карточке продукта")
 @allure.id("4")
-def test_delete_item_from_basket():  # passed
+def test_delete_item_from_basket():
     '''GIVEN'''
     authorization.successful_authorization(login, password)
 
@@ -71,7 +71,7 @@ def test_delete_item_from_basket():  # passed
 @allure.severity("hight")
 @allure.suite("Действия в карточке продукта")
 @allure.id("5")
-def test_add_item_in_compare_list():  # passed
+def test_add_item_in_compare_list():
     '''GIVEN'''
     authorization.successful_authorization(login, password)
 
@@ -90,7 +90,7 @@ def test_add_item_in_compare_list():  # passed
 @allure.severity("hight")
 @allure.suite("Действия в карточке продукта")
 @allure.id("6")
-def test_delete_item_from_compare_list():  # passed
+def test_delete_item_from_compare_list():
     '''GIVEN'''
     authorization.successful_authorization(login, password)
 

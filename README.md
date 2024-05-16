@@ -36,7 +36,7 @@
 
 ____
 
-### [Проект](https://www.neoflex.ru/) в Jenkins
+### [Проект](https://jenkins.autotests.cloud/job/Diplom_Yandex_market/) в Jenkins
 
 ### Локальный запуск
 
@@ -68,5 +68,5 @@ ___
 
 ___  
 
-3. **Telegram**  (запуск с селеноида)
+3. **Telegram**  (запуск с селеноида) 
    <img src="resources/images/tg.jpg" width="400" height="400"/>
