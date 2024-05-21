@@ -1,7 +1,5 @@
 import os
-from datetime import datetime
-import allure
-from selenium.webdriver.firefox.options import Options as FirefoxOptions
+from utils import attach
 from dotenv import load_dotenv
 from selene import browser
 import pytest
@@ -39,8 +37,10 @@ def manage_browser():
     browser.config.window_width = 1920
     browser.config.timeout = 6.0
 
+    yield browser
 
+    attach.add_screenshot(browser)
+    attach.add_logs(browser)
+    attach.add_html(browser)
 
-
-    yield
     browser.quit()
